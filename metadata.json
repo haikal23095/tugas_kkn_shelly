@@ -1,0 +1,6 @@
+{
+  "name": "Profil Desa",
+  "description": "Website landing page profil desa dengan info perangkat desa, produk UMKM interaktif yang dapat membalik (flip card), peta lokasi, dan tema warna hijau, kuning, krem.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
