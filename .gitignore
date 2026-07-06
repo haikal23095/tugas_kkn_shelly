@@ -6,3 +6,5 @@ coverage/
 *.log
 .env*
 !.env.example
+PROFIL_DESA.docx
+PENDATAAN_UMKM.docx
