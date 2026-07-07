@@ -166,6 +166,19 @@ const kknActivities: KKNActivity[] = [
 ];
 
 export default function App() {
+  // Dynamic SEO setup on mount
+  useEffect(() => {
+    document.title = "Desa Guluk Manjung - Sektor Unggulan & Pelayanan Terpadu";
+    
+    let metaDescription = document.querySelector('meta[name="description"]');
+    if (!metaDescription) {
+      metaDescription = document.createElement('meta');
+      metaDescription.setAttribute('name', 'description');
+      document.head.appendChild(metaDescription);
+    }
+    metaDescription.setAttribute('content', 'Website Resmi Desa Guluk Manjung, Kecamatan Bluto, Kabupaten Sumenep, Jawa Timur. Pusat pelayanan administrasi warga, info UMKM kerajinan tikar siwalan, gula merah, potensi desa, dan kegiatan KKN.');
+  }, []);
+
   // Mobile Menu State
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -2343,7 +2356,7 @@ export default function App() {
               </span>
               <span>•</span>
               <span className="hover:text-brand-gold-400 transition-colors cursor-pointer">
-                Guluk Manjung.desa.id
+                gulukmanjung.my.id
               </span>
             </div>
           </div>
